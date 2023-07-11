@@ -1,0 +1,571 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+
+//分支与循环语句
+
+//分支语句
+
+//1.if语句
+
+//int main()
+//{
+//	int age = 10;
+//	////------------单分支
+//	//if (age < 18)
+//	//	printf("未成年");
+//	////------------双分支
+//	//if (age < 18)
+//	//	printf("未成年");
+//	//else
+//	//	printf("成年");
+//	////------------多分支
+//	//if (age < 18)
+//	//	printf("未成年");
+//	//else if (age >= 18 && age < 28)
+//	//	printf("青年");
+//	//else if (age >= 28 && age < 58)
+//	//	printf("中年");
+//	//else
+//	//	printf("老年");
+//	////-----------分支中多语句
+//	//if (age < 18)//多语句要用代码块
+//	//{
+//	//	printf("未成年\n");
+//	//	printf("不许谈恋爱\n");
+//	//}
+//	//else
+//	//{
+//	//	if (age >= 18 && age < 28)
+//	//		printf("青年");
+//	//	else if (age >= 28 && age < 58)
+//	//		printf("中年");
+//	//	else
+//	//		printf("老年");
+//	//}
+//	////-----------悬空else
+//	//int a = 0;
+//	//int b = 2;
+//	//if (a == 1)
+//	//{
+//	//	if (b == 2)
+//	//		printf("hehe\n");
+//	//}
+//	//else
+//	//	printf("haha\n");
+//	// 
+//	// 
+//	//int num = 4;
+//	//if (5 == num)//避免写成num=5而造成错误无法发现，把错误写前面
+//	//{
+//	//	printf("hehe\n");
+//	//}
+//	return 0;
+//}
+
+//练习题
+
+////练习1----判断一个数是否为奇数
+////解答
+//int main()
+//{
+//	printf("请输入数字，a = ");
+//	int a = 0;
+//	scanf("%d", &a);
+//	if (a % 2 == 0)
+//		printf("a为偶数");
+//	else if(a % 2 == 1)
+//		printf("a为奇数");
+//	return 0;
+//}
+////练习2----输出1~100之间的奇数
+////解答1
+//int main()
+//{
+//	printf("1~100以内的奇数分别是");
+//	int a = 0;
+//	while (a <= 100)
+//	{
+//		if (a % 2 == 1)
+//			printf(" %d", a);
+//		a++;
+//	}
+//	return 0;
+//}
+////解答2
+//int main()
+//{
+//	printf("1~100内的奇数分别是：");
+//	int a = 1;
+//	while (a <= 100)
+//	{
+//		printf(" %d", a);
+//		a += 2;
+//	}
+//	return 0;
+//}
+
+//2.switch语句
+
+//int main()
+//{
+//	int day = 0;
+//	scanf("%d", &day);
+//	//switch (day)
+//	//{
+//	//case 1:
+//	//	printf("星期一\n");
+//	//	break;
+//	//case 2:
+//	//	printf("星期二\n");
+//	//	break;
+//	//case 3:
+//	//	printf("星期三\n");
+//	//	break;
+//	//case 4:
+//	//	printf("星期四\n");
+//	//	break;
+//	//case 5:
+//	//	printf("星期五\n");
+//	//	break;
+//	//case 6:
+//	//	printf("星期六\n");
+//	//	break;
+//	//case 7:
+//	//	printf("星期日\n");
+//	//	break;
+//	//}
+//	////而有很多个连续的是相同的，可以写成
+//	//int n = 1;
+//	//switch (day)
+//	//{
+//	//case 1:
+//	//	if (n == 1)
+//	//		printf(".");
+//	//case 2:
+//	//case 3:
+//	//case 4:
+//	//case 5:
+//	//	printf("工作日");
+//	//	break;
+//	//case 6:
+//	//case 7:
+//	//	printf("休息日");
+//	//	break;
+//	//default:
+//	//	printf("输入错误");
+//	//	break;
+//	//}
+//	return 0;
+//}
+
+//练习题
+
+////判断输出值
+//int main()
+//{
+//	int n = 1;
+//	int m = 2;
+//	switch (n)
+//	{
+//	case 1:
+//		m++;//---m变成3
+//	case 2:
+//		n++;//---n变成2
+//	case 3:
+//		switch (n)//从case 2入
+//		{
+//		case 1:
+//			n++;
+//		case 2:
+//			n++;//---n变成3
+//			m++;//---m变成4
+//			break;
+//		}
+//	case 4:
+//		m++;//---m变成5
+//		break;
+//	default:
+//		break;
+//	}
+//	printf("m = %d,n = %d", m, n);
+//	return 0;
+//}
+
+//循环语句
+
+//3.while语句
+
+//在屏幕上打印1~10
+//int main()
+//{
+//	int a = 1;
+//	while (a <= 10)
+//	{
+//		printf(" %d", a);
+//		a++;
+//	}
+//	return 0;
+//}
+////break与continue的使用
+//int main()
+//{
+//	int a = 1;
+//	while (a <= 10)
+//	{
+//		printf(" %d", a);
+//		if (a == 5)
+//			break;//----在此插入break在5便停止
+//		a++;
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 1;
+//	while (a <= 10)
+//	{
+//		printf(" %d", a);
+//		if (a == 5)
+//			continue;//----在此插入continue后输出1234后持续输出5
+//		a++;           //即continue后面代码不再继续而是从continue回到while语句持续判断
+//	}
+//	return 0;
+//}
+
+//补充：getchar、putchar
+
+//int main()
+//{
+//	int ch = getchar();//--getchar输入（getchar是读取单个字符的函数），putchar输出
+//	putchar(ch);
+//	printf("%c\n", ch);
+//	return 0;
+//}
+// 
+////用while写
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		putchar(ch);
+//	}
+//	//EOF-end of file->-1文件结束标志
+//	//按ctrl + z结束程序
+//	return 0;
+//}
+
+//练习题
+
+//1.分析下面代码
+//int main()
+//{
+//	int ret = 0;
+//	char password[20] = { 0 };
+//	printf("请输入密码:");
+//	scanf("%s", password);
+//	printf("\n请确认(Y/N):");
+//	ret = getchar();
+//	if (ret == 'Y')
+//		printf("确认成功");
+//	else if (ret == 'N')
+//		printf("放弃确认");
+//	else
+//		printf("错误");
+//	return 0;
+//}
+//如果直接是以上代码，当输入密码后按回车，则scanf把密码读走留下\n
+//而再到getchar读取时，直接读走缓冲区中的\n（即10），不再停留
+//解决方法：清空缓冲区，增加一个getchar()即可
+//即
+//int main()
+//{
+//	int ret = 0;
+//	char password[20] = { 0 };
+//	printf("请输入密码:");
+//	scanf("%s", password);
+//	printf("\n请确认(Y/N):");
+//	getchar();
+//	ret = getchar();
+//	if (ret == 'Y')
+//		printf("确认成功");
+//	else if (ret == 'N')
+//		printf("放弃确认");
+//	else
+//		printf("错误");
+//	return 0;
+//}
+//但如果输入密码123456 abcd也会出错，scanf只会读取空格前的
+//写一个循环，让其清空缓冲区
+//int main()
+//{
+//	int ch = 0;
+//	int ret = 0;
+//	char password[20] = { 0 };
+//	printf("请输入密码:");
+//	scanf("%s", password);
+//	printf("\n请确认(Y/N):");
+//	while ((ch = getchar()) != '\n')
+//	{
+//		;
+//	}
+//	ret = getchar();
+//	if (ret == 'Y')
+//		printf("确认成功");
+//	else if (ret == 'N')
+//		printf("放弃确认");
+//	else
+//		printf("错误");
+//	return 0;
+//}
+//password最后储存值为空格前的
+
+//2.分析下面代码
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch < '0' || ch>'9')
+//			continue;
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+//只打印数字字符，不输出非数字字符
+//改进成输入数字密码的代码
+//int main()
+//{
+//	printf("请输入您的密码：");
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch < '0' || ch>'9')
+//		{
+//			getchar();
+//			printf("密码不合理");
+//			continue;
+//		}
+//		else
+//		{
+//			putchar(ch);
+//		}
+//	}
+//	return 0;
+//}
+
+//4.for循环
+
+//int main()
+//{
+//	for (int a = 0; a <= 10; a++)
+//	{
+//		printf("%d ", a);
+//	}
+//	return 0;
+//}
+//break,continue一样可以使用
+//int main()
+//{
+//	for (int a = 0; a <= 10; a++)
+//	{
+//		if (a == 5)
+//			break;
+//		printf("%d ", a);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	for (int a = 0; a <= 10; a++)
+//	{
+//		if (a == 5)
+//			continue;
+//		printf("%d ", a);
+//	}
+//	return 0;
+//}
+//注：continue此时不再陷入死循环而是跳过
+//for变种
+//变种1
+//int main()
+//{
+//	for (;;)
+//	{
+//		printf("hh\n");
+//	}
+//	return 0;
+//}
+//变种2
+//int main()
+//{
+//	int x, y;
+//	for (x = 0, y = 0; x < 2 && y < 5; ++x, y++)
+//	{
+//		printf("hh\n");
+//	}
+//	return 0;
+//}
+
+//练习题
+
+//问循环要进行多少次
+//int main()
+//{
+//	int i = 0;
+//	int k = 0;
+//	for (i = 0, k = 0; k = 0; i++, k++)
+//	{
+//		k++;
+//	}
+//	return 0;
+//}
+//分析，判断是=而非==，将k赋值为0，0为假，循环不进入，所以循环0次
+//如果是==，则循环1次
+
+//5.do while循环
+
+//在屏幕上打印1~10
+//int main()
+//{
+//	int a = 1;
+//	do
+//	{
+//		printf("%d ", a);
+//		a++;
+//	}
+//	while (a <= 10);
+//	return 0;
+//}
+////break/continue
+//int main()
+//{
+//	int a = 1;
+//	do
+//	{
+//		if (a == 5)
+//			continue;//break,continue用法与上面语句相通
+//		printf("%d ", a);
+//		a++;
+//	} 
+//	while (a <= 10);
+//	return 0;
+//}
+
+//总练习
+
+//1.计算n的阶乘
+
+//int main()
+//{
+//	printf("请输入一个数字 c = ");
+//	int a = 0;
+//	int b = 0;
+//	int c = 1;
+//	scanf("%d", &b);
+//	for (a = 1; a <= b; a++)
+//	{
+//		c = c * a;
+//	}
+//	printf("c! = %d\n", c);
+//	return 0;
+//}
+
+//2.计算1!+2!+3!+...+10!
+
+//解答1
+//int main()
+//{
+//	int a = 0;
+//	int b = 1;
+//	int c = 1;
+//	int d = 0;
+//	for (b = 1; b <= 10; b++)
+//	{
+//		c = 1;//啊啊啊啊要记得将c值归一
+//		for (a = 1; a <= b; a++)
+//		{
+//			c = c * a;
+//		}
+//		d = d + c;
+//	}
+//	printf("1!+2!+3!+...+10! = %d\n", d);
+//	return 0;
+//}
+
+//解答2（优化）
+//int main()
+//{
+//	int a = 0;
+//	int b = 1;
+//	int c = 0;
+//	for (a = 1; a <= 10; a++)
+//	{
+//		b = b * a;
+//		c = c + b;
+//	}
+//	printf("1!+2!+3!+...+10! = %d\n", c);
+//	return 0;
+//}
+
+
+//3.在一个有序数组中查找具体的某个数字n，编写 int binsearch(int x,int v[],int n);功能：在v[0]<=v[1]<=v[2]...<=v[n-1]的数组中查找x
+
+//解答1，顺序查找法：
+//int main()
+//{
+//	printf("请输入您要查找的数 ：");
+//		int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int k = 0;
+//	scanf("%d", &k);
+//	int i = 0;
+//	int sz = sizeof(arr)/sizeof(arr[0]);
+//	for (i = 0; i < sz; i++)
+//	{
+//		if (k == arr[i])
+//		{
+//			printf("找到了，并且下标为 %d\n", i);
+//			break;
+//		}
+//	}
+//	if (i == sz)
+//		printf("抱歉，没有找到字符\n");
+//	return 0;
+//}
+
+//解答2：折半查找算法/二分查找算法
+//int main()
+//{ 
+//	printf("请输入您要查找的数 ：");
+//	int k = 0;
+//	scanf("%d", &k);
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int left = 0;
+//	int right = (sizeof(arr) / sizeof(arr[0])) - 1;
+//	while (left <= right)
+//	{
+//		int mid = (left + right) / 2;
+//		if (arr[mid] > k)
+//		{
+//			left = left;
+//			right = mid - 1;
+//		}
+//		else if (arr[mid] < k)
+//		{
+//			left = mid + 1;
+//			right = right;
+//		}
+//		else
+//		{
+//			printf("找到，下标是 %d\n", mid);
+//			break;
+//		}
+//	}
+//	if (left > right)
+//		printf("找不到\n");
+//	return 0;
+//}
+
+
