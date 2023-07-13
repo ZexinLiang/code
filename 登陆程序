@@ -1,0 +1,59 @@
+int main()
+{
+	char password1[20] = { 0 };
+	char password2[20] = { 0 };
+	for(;;)
+	{
+		printf("请输入您的密码(输入完成后enter两次以继续):\n");
+		scanf("%s", password1);
+		char ch = getchar();
+		while ((ch = getchar()) != '\n')
+		{
+			;
+		}
+		printf("请确认您的密码:\n");
+		scanf("%s", &password2);
+		if (strcmp(password1, password2) == 0)
+		{
+			printf("请稍等，即将进入登陆界面\n");
+			break;
+		}
+		else
+		{
+			system("cls");
+			printf("您输入的密码不一致，请重新输入\n");
+			continue;
+		}
+	}
+	Sleep(3000);
+	system("cls");
+	int i = 0;
+	char input[20] = { 0 };
+	for (i = 0; i < 3; i++)
+	{
+		printf("按enter继续");
+		char ch2 = getchar();
+		while ((ch2 = getchar()) != '\n')
+		{
+			;
+		}
+		printf("请输入密码进行登录 :");
+		scanf("%s", &input);
+		if (strcmp(input, password1) == 0)//等号不能判断两个字符串相等,要用string.h中的库函数strcmp，如果==0，则相等
+		{
+			printf("登录成功\n");
+			break;
+		}
+		else
+		{
+			printf("错误，请重新输入\n");
+			Sleep(1000);
+			system("cls");
+		}
+	}
+	if (i == 3)
+	{
+		printf("多次输入错误，您的帐号已停封");
+	}
+	return 0;
+}
