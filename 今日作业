@@ -1,0 +1,201 @@
+# code
+//6.打印素数
+
+//解答
+//int main()
+//{
+//	int a = 0;
+//	int b = 2;
+//	int count = 0;
+//	for (a = 101; a <= 200; a += 2)
+//	{
+//		for (b = 2; b < sqrt(a); b++)
+//		{
+//			if (a % b == 0)
+//				break;
+//		}
+//		if (b > sqrt(a))
+//		{
+//			printf(" %d", a);
+//			count++;
+//		}
+//	}
+//	printf("\ncount = %d\n", count);
+//	return 0;
+//}
+//
+
+//7.编写一个代码数一下1-100间有多少个数字包含9
+
+//解答
+//int main()
+//{
+//	int a = 0;
+//	int count = 0;
+//	for (a = 1; a<100; a++)
+//	{
+//		if((a % 10 == 9) || (a / 10 == 9))
+//		{
+//			printf("%d ", a);
+//			count++;
+//		}
+//	}
+//	printf("\ncount = %d", count);
+//	return 0;
+//}
+
+//8.计算1-1/2+1/3-1/4...+1/99-1/100
+
+//解答1
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	double count1 = 0;
+//	double count2 = 0;
+//	for (a = 1; a < 100; a += 2)
+//		count1 += 1.0/a;
+//	for (b = 2; b <= 100; b += 2)
+//		count2 += 1.0/b;
+//	printf("1-1/2+1/3-1/4...+1/99-1/100 = %lf", count1 - count2);
+//	return 0;
+//}
+
+//解答2
+//int main()
+//{
+//	int a = 0;
+//	double sum = 0;
+//	int flag = 1;
+//	for (a = 1; a <= 100; a++)
+//	{
+//		sum += flag * 1.0 / a;
+//		flag = -flag;
+//	}
+//	printf("1-1/2+1/3-1/4...+1/99-1/100 = %lf", sum);
+//	return 0;
+//}
+
+//9.求10个整数中的最大值
+
+//解答
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int max = 0;
+//	int i = arr[0];
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i < sz; i++)
+//	{
+//		if (arr[i] >= max)
+//		{
+//			max = arr[i];
+//		}
+//		else
+//			continue;
+//	}
+//	printf("max = %d", max);
+//	return 0;
+//}
+
+//10.在屏幕上打印99乘法表
+
+//解答
+//int main()
+//{
+//	printf("九九乘法表\n");
+//	for (int a = 1; a <= 9; a++)
+//	{
+//		for (int b = 1; b <= a; b++)
+//			printf("%d * %d = %-2d ", a, b, a * b);//2d----右对齐   -2d----左对齐
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+//11.猜数字游戏
+
+//void game()
+//{
+//	int ret;
+//	int i = 0;
+//	ret = rand() % 100 + 1;
+//	//时间戳:当前计算机的时间减去计算机的起始时间（1970.1.1.0：0：0）
+//	while (1)
+//	{
+//		printf("请输入数字>:");
+//		scanf("%d", &i);
+//		if (i > ret)
+//			printf("猜大了\n");
+//		else if (i < ret)
+//			printf("猜小了\n");
+//		else
+//		{
+//			printf("猜对了\n");
+//			printf("即将跳转至菜单");
+//			Sleep(3000);
+//			system("cls");
+//			break;
+//		}
+//	}
+//}
+//void menu()
+//{
+//	printf("*************************\n");
+//	printf("****1.play*****0.exit****\n");
+//	printf("*************************\n");
+//}
+//int main()
+//{
+//	int input;
+//	srand((unsigned int)time(NULL));
+//	do
+//	{
+//		menu();
+//		printf("请选择>:");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			game();
+//			break;
+//		case 0:
+//			printf("退出游戏\n");
+//			break;
+//		default:
+//			system("cls");
+//			printf("选择错误\n");
+//			break;
+//		}
+//	} while (input);
+//	return 0;
+//}
+
+//goto语句
+
+//int main()
+//{
+//	again:
+//	printf("hello");
+//	goto again;
+//	printf("sbsbsb");//goto使得进入死循环
+//	return 0;
+//}
+
+//关机程序
+
+//int main()
+//{
+//	char input[20];
+//	system("shutdown -s -t 60");
+//	again:
+//	printf("请注意，电脑将在1min后关机，请输入：我是猪 即可取消关机\n请输入>:");
+//	scanf("%s", input);
+//	if (strcmp(input, "我是猪") == 0)
+//		system("shutdown -a");
+//	else
+//	{
+//		goto again;
+//	}
+//	return 0;
+//}
