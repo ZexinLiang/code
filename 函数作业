@@ -1,0 +1,145 @@
+//递归
+
+//最简单的递归
+//int main()
+//{
+//	printf("hehe\n");//不会一直下去，会栈溢出，这也是递归常见错误
+//	main();
+//	return 0;
+//}
+
+//1.将输入数字倒序打印
+
+//void print(int n)
+//{
+//	printf("%d", n % 10);
+//	if (n > 9)//递归一定要找到条件，且递归后条件接近限制套件
+//	{
+//		print(n / 10);
+//	}
+//}
+//int main()
+//{
+//	unsigned int num = 0;
+//	scanf("%d", &num);
+//	print(num);
+//	return 0;
+//}
+
+//2.编写函数求字符串长度，要求不允许创建临时变量
+
+//int mylen(char* arr)
+//{
+//	if (*arr != '\0')
+//		return 1 + mylen(arr + 1);
+//	else
+//		return 0;
+//}
+//int main()
+//{
+//	char arr[] = "bit";
+//	int len = mylen(arr);
+//	printf("len = %d", len);
+//	return 0;
+//}
+
+//3.求n的阶乘
+
+//int fac(int x)
+//{
+//	if (x > 1)
+//		return x * fac(x - 1);
+//	else
+//		return 1;
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int m = fac(n);
+//	printf("%d", m);
+//	return 0;
+//}
+
+//4.求斐波拉契数列第n项
+
+//法一
+//int fib(int x)//递归时，数字变大时要大量的重复计算，计算量太大，程序输出程序慢
+//{
+//	if (x <= 2)
+//		return 1;
+//	else
+//		return fib(x - 1) + fib(x - 2);
+//}
+//int main()
+//{
+//	int n = 0;
+//	int ret = 0;
+//	scanf("%d", &n);
+//	ret = fib(n);
+//	printf("ret = %d", ret);
+//	return 0;
+//}
+
+//法二
+//int fib(int x)
+//{
+//	int first = 1;
+//	int second = 1;
+//	int final = 1;
+//	if (x <= 2)
+//		return final;
+//	else
+//	{
+//		int i = 1;
+//		for (i = 1; i <= x - 2; i++)
+//		{
+//			final = first + second;
+//			first = second;
+//			second = final;
+//		}
+//		return final;
+//	}
+//}
+//int main()
+//{
+//	int n = 0;
+//	int ret = 0;
+//	scanf("%d", &n);
+//	ret = fib(n);
+//	printf("第%d个斐波拉契数是%d", n, ret);
+//	return 0;
+//}
+
+//5.汉诺塔问题
+
+//void move(int, char, char, char);
+//
+//int main()
+//{
+//	//A、B、C分别代表三个柱子
+//	char ch1 = 'A';
+//	char ch2 = 'B';
+//	char ch3 = 'C';
+//
+//	//n代表圆盘的个数
+//	int n;
+//	printf("请输入圆盘个数：");
+//	scanf("%d", &n);
+//	move(n, ch1, ch2, ch3);
+//
+//	return 0;
+//}
+//
+////将n个圆盘从x柱子借助y柱子移动到z柱子上
+//void move(int n, char x, char y, char z)
+//{
+//	if (n == 1)
+//		printf("圆盘编号%d：从%c移动到%c\n", n, x, z);
+//	else
+//	{
+//		move(n - 1, x, z, y);
+//		printf("圆盘编号%d：从%c移动到%c\n", n, x, z);
+//		move(n - 1, y, x, z);
+//	}
+//}
