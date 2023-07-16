@@ -1,0 +1,228 @@
+# code
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+#include<windows.h>
+#include<stdlib.h>
+#include<time.h>
+
+//函数
+
+//一些库函数
+
+//strcpy----字符串拷贝
+
+//int main()
+//{
+//	char arr1[] = "1234";
+//	char arr2[] = "wxmwmcrc";//要保证arr2>=arr1
+//	strcpy(arr2, arr1);      //将arr2变成arr1,实际放了1234\0
+//	printf("%s", arr2);
+//	return 0;
+//}
+
+//memset
+
+//int main()
+//{
+//	char arr1[] = "hello world";
+//	memset(arr1, '*', 5);//函数，替换为-用''引用，替换个数
+//	printf("%s", arr1);
+//	return 0;
+//}
+
+//自定义函数
+
+//1.写一个函数找出两个整数中较大值
+
+//int get_max(int x, int y)
+//{
+//	return (x > y) ? (x) : (y);
+//}
+//int main()
+//{
+//	printf("请输入两个数（以空格隔开）：");
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d%d", &a, &b);
+//	int c = get_max(a,b);
+//	printf("最大数为%d\n", c);
+//	return 0;
+//}
+
+//2.写一个函数可以交换两个整型变量的内容
+
+//----此方法不可行,xyab属不同地址
+//void Swap(int x, int y)//void没有返回值
+//{
+//	int z = x;
+//	x = y;
+//	y = z;
+//}
+//int main()
+//{
+//	int a = 20;
+//	int b = 10;
+//	Swap(a, b);
+//	printf("%d%d", a, b);
+//	return 0;
+//}
+
+//void Swap(int* x, int* y)//解引用传过来的地址，使得地址不改变，实现远程操控改变变量
+//{
+//	int tmp = 0;
+//	tmp = *x;
+//	*x = *y;
+//	*y = tmp;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	printf("a = %d,b = %d\n", a, b);
+//	Swap(&a, &b);//需要传地址过去
+//	printf("a = %d,b = %d\n", a, b);
+//	return 0;
+//}
+
+//3.写一个函数判断一个数是不是素数
+
+//void judge(int x)
+//{
+//	int y = 0;
+//	for (y = 2; y < x; y++)
+//	{
+//		if (x % y != 0)
+//			continue;
+//		else
+//		{
+//			printf("此数非质数");
+//			break;
+//		}
+//	}
+//	if (x == y )
+//	{
+//		printf("此数为质数");
+//	}
+//}
+//int main()
+//{
+//	printf("请输入一个数字：");
+//	int a = 0;
+//	scanf("%d", &a);
+//	judge(a);
+//	return 0;
+//}
+
+//由上改编并优化成打印100-200间的质数
+
+//int judge(int* x)
+//{
+//	int y = 0;
+//	for (y = 2; y <= sqrt(*x); y++)
+//	{
+//		if (*x % y == 0)
+//			return 0;
+//	}
+//		return 1;
+//}
+//int main()
+//{
+//	printf("100-200间质数为");
+//	int a = 0;
+//	for (a = 100; a < 200; a++)
+//	{
+//		if (judge(&a) == 1)
+//		{
+//			printf("%d ", a);
+//		}
+//	}
+//	return 0;
+//}
+
+//4.写一个函数，每调用一次这个函数，就会将num的值增加1
+
+//void plus(int* x)
+//{
+//	int y = *x;
+//	*x = y + 1;//或者直接用(*x)++;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int i = 1;
+//	for(i;i<=3;i++)
+//	{
+//		plus(&a);
+//		printf("a = %d", a);
+//	}
+//	return 0;
+//}
+
+//5.写一个函数判断一年是不是闰年
+
+//int judge(int x)
+//{
+//	if (((x % 4 == 0) && (x % 100 != 0)) || (x % 400) == 0)
+//		return 1;
+//	else
+//		return 0;
+//}
+//int main()
+//{
+//	printf("请输入年份>:");
+//	int year = 0;
+//	scanf("%d", &year);
+//	if (judge(year) == 1)
+//		printf("\n该年为闰年");
+//	else if (judge(year) == 0)
+//		printf("\n该年非闰年");
+//	return 0;
+//}
+
+//6.写一个函数，实现一个整形有序数列的二分查找
+
+//int search(int k, int arr[], int sz)//arr本质上是一个指针
+//{
+//	int left = 0;
+//	/*int right = sizeof(arr) / sizeof(arr[1]) - 1;*/
+//	int right = sz - 1;
+//	while (left <= right)//一定是<=
+//	{
+//		int mid = (left + right) / 2;//此句不可放在循环外
+//		if (arr[mid] < k)
+//		{
+//			left = mid-1;
+//		}
+//		else if (arr[mid] > k)
+//		{
+//			right = mid-1;
+//		}
+//		else if (arr[mid] = k)
+//		{
+//			return mid;
+//		}
+//	}
+//	return -1;
+//}
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14 };
+//	int need = 7;
+//	int sz = sizeof(arr) / sizeof(arr[1]);
+//	int ret = search(need, arr,sz);//数组仅仅传首元素地址
+//	if (ret == -1)
+//		printf("找不到指定的数字");
+//	else
+//		printf("找到了，下标是%d", ret);
+//	return 0;
+//}
+
+//函数的链式访问示例
+
+//int main()
+//{
+//	printf("%d", printf("%d", printf("%d", 43)));//printf返回打印在屏幕上字符的个数
+//	return 0;
+//}
