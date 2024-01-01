@@ -1,9 +1,309 @@
-<mxfile host="app.diagrams.net" modified="2024-01-01T03:30:31.787Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" version="22.1.16" etag="R_VsoPOhEdiHJHULgNXB" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-01T04:15:17.579Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="g_GP5YghSaMTXNwy-Idx" version="22.1.16" type="github">
   <diagram name="第 1 页" id="2WmyflCK8ktEX4IRngpf">
-    <mxGraphModel>
+    <mxGraphModel dx="802" dy="455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-1" target="1LkqUc88LuxEq9g32Vnp-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="120" />
+              <mxPoint x="230" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-21" value="分类" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-11">
+          <mxGeometry x="0.5361" y="-1" relative="1" as="geometry">
+            <mxPoint x="16" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-1" target="1LkqUc88LuxEq9g32Vnp-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="120" />
+              <mxPoint x="230" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-19" value="组成" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-13">
+          <mxGeometry x="0.4051" y="3" relative="1" as="geometry">
+            <mxPoint x="8" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-1" target="1LkqUc88LuxEq9g32Vnp-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="120" />
+              <mxPoint x="230" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-20" value="功能" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-14">
+          <mxGeometry x="0.3229" y="-1" relative="1" as="geometry">
+            <mxPoint x="5" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-1" target="1LkqUc88LuxEq9g32Vnp-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="120" />
+              <mxPoint x="230" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-17" value="起源" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-15">
+          <mxGeometry x="0.5632" y="1" relative="1" as="geometry">
+            <mxPoint x="2" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-1" value="Arduino开源平台定义" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="70" y="100" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-7" value="Arduino平台旨在提供一个灵活、易于使用的开发环境，用于构建各种电子原型。它包括硬件和软件组件，允许用户创建交互式的电子装置，从简单的LED闪烁到复杂的机器人和嵌入式系统。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="80" width="526" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-8" value="Arduino是一款开源电子原型平台，由意大利的Massimo Banzi和David Cuartielles于2005年共同创办。起初是为了提供简单易用的硬件和软件工具，使非专业人士也能轻松创建交互式的电子项目。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="30" width="526" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-9" value="&lt;div&gt;硬件： Arduino板是其核心，通常包含一个微控制器（如ATmega系列）和一系列输入输出引脚。还有各种传感器、执行器等可连接的模块。&lt;/div&gt;&lt;div&gt;软件： Arduino IDE（集成开发环境）是用于编写、上传和运行Arduino代码的软件。用户可以使用C/C++编程语言进行开发。&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="130" width="526" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-10" value="&lt;div&gt;Arduino Uno： 基础型号，适用于初学者。&lt;/div&gt;&lt;div&gt;Arduino Mega： 提供更多的输入输出引脚。&lt;/div&gt;&lt;div&gt;Arduino Nano： 小型版本，适用于嵌入式项目。&lt;/div&gt;&lt;div&gt;Arduino Due： 基于ARM架构的高性能板。&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="210" width="526" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-25" target="1LkqUc88LuxEq9g32Vnp-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="330" />
+              <mxPoint x="230" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-36" value="易学易用" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-33">
+          <mxGeometry x="0.3984" y="2" relative="1" as="geometry">
+            <mxPoint y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-25" target="1LkqUc88LuxEq9g32Vnp-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="330" />
+              <mxPoint x="230" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-37" value="开源共享" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-34">
+          <mxGeometry x="0.3158" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-25" target="1LkqUc88LuxEq9g32Vnp-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="330" />
+              <mxPoint x="230" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-38" value="实际应用" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-35">
+          <mxGeometry x="0.514" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-25" value="意义以及学习的好处" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="70" y="310" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-28" value="Arduino平台的设计理念使其非常适合初学者。使用简单的语法和开发环境，无需深厚的电子学或编程知识。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="280" width="526" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-29" value="Arduino硬件和软件是开源的，鼓励用户共享代码和设计。这促进了全球社区的合作和创新" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="330" width="526" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-30" value="学习Arduino可以让人们将创意转化为实际的原型和产品，从而深化对电子和编程的理解。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="370" width="526" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-39" target="1LkqUc88LuxEq9g32Vnp-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="460" />
+              <mxPoint x="230" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-46" value="官方网站" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-43">
+          <mxGeometry x="0.3476" relative="1" as="geometry">
+            <mxPoint x="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-39" target="1LkqUc88LuxEq9g32Vnp-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="460" />
+              <mxPoint x="230" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-47" value="开源社区" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-44">
+          <mxGeometry x="0.2057" y="-3" relative="1" as="geometry">
+            <mxPoint x="7" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-39" target="1LkqUc88LuxEq9g32Vnp-42">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="460" />
+              <mxPoint x="230" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-49" value="图书文档" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-45">
+          <mxGeometry x="0.5171" y="-2" relative="1" as="geometry">
+            <mxPoint y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-39" value="获取开源平台资源的途径" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;strokeWidth=2;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="70" y="440" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-40" value="Arduino的官方网站（https://www.arduino.cc/）提供了丰富的文档、教程、库和论坛，是获取信息的首选途径。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="410" width="526" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-41" value="&lt;div&gt;GitHub等开源平台上有大量与Arduino相关的项目和代码，通过搜索和参与社区，可以获取到丰富的资源。&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="460" width="526" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-42" value="有许多书籍和在线文档专门介绍Arduino的使用和开发，这些资源对深入学习非常有帮助。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="510" width="526" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-50" target="1LkqUc88LuxEq9g32Vnp-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="710" />
+              <mxPoint x="230" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-67" value="准备硬件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-59">
+          <mxGeometry x="0.6607" y="-2" relative="1" as="geometry">
+            <mxPoint x="3" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-50" target="1LkqUc88LuxEq9g32Vnp-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="710" />
+              <mxPoint x="230" y="605" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-68" value="安装IDE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-60">
+          <mxGeometry x="0.6077" y="1" relative="1" as="geometry">
+            <mxPoint x="3" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-50" target="1LkqUc88LuxEq9g32Vnp-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="710" />
+              <mxPoint x="230" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-70" value="连接板子" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-61">
+          <mxGeometry x="0.4889" y="-1" relative="1" as="geometry">
+            <mxPoint x="4" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-50" target="1LkqUc88LuxEq9g32Vnp-53">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="710" />
+              <mxPoint x="230" y="685" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-71" value="编写代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-62">
+          <mxGeometry x="0.4247" relative="1" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-50" target="1LkqUc88LuxEq9g32Vnp-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="710" />
+              <mxPoint x="230" y="725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-72" value="编译上传" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-63">
+          <mxGeometry x="0.3421" y="4" relative="1" as="geometry">
+            <mxPoint y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-50" target="1LkqUc88LuxEq9g32Vnp-56">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="710" />
+              <mxPoint x="230" y="765" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-73" value="测试调试" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-64">
+          <mxGeometry x="0.4973" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-50" target="1LkqUc88LuxEq9g32Vnp-58">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="710" />
+              <mxPoint x="230" y="805" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-74" value="拓展应用" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-65">
+          <mxGeometry x="0.6291" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1LkqUc88LuxEq9g32Vnp-50" target="1LkqUc88LuxEq9g32Vnp-57">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="710" />
+              <mxPoint x="230" y="845" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-75" value="共享改进" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1LkqUc88LuxEq9g32Vnp-66">
+          <mxGeometry x="0.666" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-50" value="Arduino开源平台的应用流程" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="70" y="690" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-51" value="获取所需的Arduino板和相关组件，如传感器、LED等。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="549" width="526" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-52" value="从官方网站下载并安装Arduino IDE。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="590" width="526" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-53" value="在Arduino IDE中编写C/C++代码，实现所需功能。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="670" width="526" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-54" value="将代码编译成可执行文件，并上传到Arduino板上。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="710" width="526" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-55" value="&lt;div&gt;使用USB线将Arduino板连接到计算机。&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="630" width="526" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-56" value="通过串口监视器等工具测试代码的执行情况，并根据需要进行调试。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="750" width="526" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-57" value="将项目分享到社区，获取反馈，不断改进和完善。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="830" width="526" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1LkqUc88LuxEq9g32Vnp-58" value="根据项目的需求，可以连接各种传感器和执行器，拓展应用功能。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="790" width="526" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
